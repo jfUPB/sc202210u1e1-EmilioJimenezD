@@ -1,6 +1,6 @@
-// COLOCO AQUÍ TU NOMBRE COMPLETO
-// COLOCA AQUÍ TU ID
-// COLOCA AQUÍ TU CORREO ELECTRÓNICO
+//Emilio José Jiménez Delos Ríos
+// 000149647
+// emilio.jimenez@upb.edu.co
 (START)
     @START
     0;JMP
