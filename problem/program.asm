@@ -47,14 +47,14 @@
     D=M
     @52                                                       //Direccion si es F y esta en 0
     D;JEQ
-    @16                                                       //Direccion si es F y esta en 1
+    @16                                                       //Direccion si es F y esta en -1
     A;JMP
     
     @16384   //Verificamos si la pantalla esta negra o blanca
     D=M
     @16                                                       //Direccion si es C y esta en 0
     D;JEQ
-    @72                                                     //Direccion si es C y esta en 1
+    @72                                                     //Direccion si es C y esta en -1
     A;JMP
 
     @8192 //Declré un limite
@@ -69,7 +69,7 @@
 
     @10   //Pongo la pantalla en negro
     A=M
-    M=M+1
+    M=M-1
     @10
     M=M+1
     @11
@@ -92,7 +92,7 @@
 
     @10   //Pongo la pantalla en Blanco
     A=M
-    M=M-1
+    M=M+1
     @10
     M=M+1
     @11
