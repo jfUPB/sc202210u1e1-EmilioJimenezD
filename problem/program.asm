@@ -42,3 +42,17 @@
     D;JEQ
     @16
     D;JMP
+
+    @16384
+    D=A
+    @6347 //Direccion si es F y esta en 0
+    D;JEQ
+    @6347 //Direccion si es F y esta en 1
+    A;JMP
+    
+    @16384
+    D=A
+    @6347 //Direccion si es C y esta en 0
+    D;JEQ
+    @6347 //Direccion si es C y esta en 1
+    A;JMP
