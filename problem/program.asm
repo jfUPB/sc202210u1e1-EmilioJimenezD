@@ -54,7 +54,7 @@
     D=M
     @16                                                       //Direccion si es C y esta en 0
     D;JEQ
-    @1000                                                     //Direccion si es C y esta en 1
+    @72                                                     //Direccion si es C y esta en 1
     A;JMP
 
     @8192 //Declré un limite
@@ -80,3 +80,25 @@
     @16
     D;JMP
 
+    @8192 //Declré un limite
+    D=A
+    @11
+    M=D
+
+    @16384 //Declré un contador
+    D=A
+    @10
+    M=D
+
+    @10   //Pongo la pantalla en Blanco
+    A=M
+    M=M-1
+    @10
+    M=M+1
+    @11
+    M=M-1
+    D=M
+    @80     //Direccion para repetir el ciclo de negrear
+    D;JNE
+    @16
+    D;JMP
